@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dama De Ferro</title>
+    <link rel="sortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <!--Menu para navegação-->
+        <div id="home">
+            <div class="logo">
+                <img src="images/logo3.png" alt="Logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="#home">Inicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#minu">Vinhos</a>
+                <a href="#contact">Fale Conosco</a>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <!--Topo-->
+        <div class="conteiner2">
+            <div class="texto1">
+                <h1>Visite o Dama De Ferro</h1>
+                <h2>Bebidas/Música/Gente Boa</h2>
+            </div>
+            <div class="imagem1">
+                <img id="bar" src="images/top.jpg" alt="Foto do Bar">
+            </div>
+            <div id="sobre"></div>
+        </div>
+
+
+        <!--Sobre o bar e imagem do vinho-->
+        <div class="conteiner3">
+            <div class="texto2">
+                <div id="about">
+                    <section>
+                        <h2>Sobre o </h2>
+                        <h2> Dama De Ferro</h2>
+                    </section>
+                </div>
+                <p id="paragrafo1">Estabelecido em 2021, Dama De Ferro é um bar de vinhos aconchegante que oferece um
+                    ambiente
+                    tradicional.
+                    Localizados no coração de São Paulo, garantimos que se você está procurando uma noite de diversão e
+                    entretenimento, somos a escolha certa.</p>
+                <p id="paragrafo2">Da música á lista cuidadosamente curada de bebidas, nossa incrível equipe cria uma
+                    experiência única
+                    para nossos hóspedes. Quer esteja em uma noite fora com amigos ou apenas tentando sacias sua sede,
+                    você é sempre bem-vindo por aqui.</p>
+            </div>
+            <div class="imagem2">
+                <img src="images/vinho2.jpg" alt="vinho">
+                <div id="minu"></div>
+            </div>
+        </div>
+        <!-- Cardápio -->
+
+        <div class="main">
+
+            <h1>Carta de Vinhos</h1>
+
+            <p></p><br>
+
+
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+                <button class="btn" onclick="filterSelection('casa')"> Dá Casa</button>
+                <button class="btn" onclick="filterSelection('espumantes')"> Espumantes</button>
+                <button class="btn" onclick="filterSelection('branco')"> Brancos</button>
+                <button class="btn" onclick="filterSelection('tinto')"> Tinto</button>
+            </div>
+
+            <!-- Dá Casa -->
+            <div class="row">
+                <div class="column casa">
+                    <div class="content">
+                        <img src="images/Dama_Ferro-removebg-preview.png" alt="Dama de Ferro Wine" width="110"
+                            height="300">
+                        <p></p><br>
+                        <h4>Espumante Dama de Ferro</h4>
+                        <p></p><br>
+                        <p>R$150,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column casa">
+                    <div class="content">
+                        <img src="images/swartland_red_dry.png" alt="Swartland Winery Land Red Dry" width="300"
+                            height="300">
+                        <p></p><br>
+                        <h4>Swartland Winery Red Dry </h4>
+                        <p></p><br>
+                        <p>R$70,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column casa">
+                    <div class="content">
+                        <img src="images/cheninblanc.png" alt="Swartland Winery Cheninblanc" width="85" height="300">
+                        <p></p><br>
+                        <h4>Swartland Winery Cheninblanc</h4>
+                        <p></p><br>
+                        <p>R$75,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+
+                <!-- Espumantes -->
+                <div class="column espumantes">
+                    <div class="content">
+                        <img src="images/Champagne.png" alt="Champagne" width="100" height="300">
+                        <p></p><br>
+                        <h4>Champagne</h4>
+                        <p></p><br>
+                        <p>R$140,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column espumantes">
+                    <div class="content">
+                        <img src="images/Prosecco.png" alt="Prosecco" width="300" height="300">
+                        <p></p><br>
+                        <h4>Prosecco</h4>
+                        <p></p><br>
+                        <p>R$150,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column espumantes">
+                    <div class="content">
+                        <img src="images/Espumante_Nocturno.png" alt="Nocturno Brut" width="110" height="300">
+                        <p></p><br>
+                        <h4>Nocturno Brut</h4>
+                        <p></p><br>
+                        <p>R$80,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+
+                <!-- Brancos -->
+                <div class="column branco">
+                    <div class="content">
+                        <img src="images/Atlantic_View.webp" alt="Atlantic View" width="210" height="300">
+                        <h4>Atlantic View</h4>
+                        <p></p><br>
+                        <p>R$70,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column branco">
+                    <div class="content">
+                        <img src="images/Enclos-Wine.png" alt="Enclos Du Wine Hunter" width="200" height="300">
+                        <h4>Enclos Du Wine Hunter</h4>
+                        <p></p><br>
+                        <p>R$130,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column branco">
+                    <div class="content">
+                        <img src="images/Gloria_Reynolds.jpg" alt="Gloria Reynolds" width="250" height="300">
+                        <h4>Gloria Reynolds</h4>
+                        <p></p><br>
+                        <p>R$80,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+
+                <!-- Tinto -->
+                <div class="column tinto">
+                    <div class="content">
+                        <img src="images/Casillero_Del.webp" alt="Casillero Del Diablo" width="200" height="300">
+                        <h4>Casillero Del Diablo</h4>
+                        <p></p><br>
+                        <p>R$110,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column tinto">
+                    <div class="content">
+                        <img src="images/Leyenda_Del.webp" alt="Leyenda Del Toqui" width="200" height="300">
+                        <h4>Leyenda Del Toqui</h4>
+                        <p></p><br>
+                        <p>R$110,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                    </div>
+                </div>
+                <div class="column tinto">
+                    <div class="content">
+                        <img src="images/Partridge_Seleccion.webp" alt="Partridge Seleccion" width="200" height="300">
+                        <h4>PartridgeSeleccion</h4>
+                        <p></p><br>
+                        <p>R$160,00</p>
+                        <p></p><br>
+                        <button class="btn active">Carrinho +</button>
+                        <div id="contact"></div>
+
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+        
+
+        <script>
+            const nav = document.getElementsByTagName("nav")[0];
+            const topoNav = nav.offsetTop;
+
+            window.onscroll = function () {
+                fixarMenuNoTopo();
+            }
+
+            function fixarMenuNoTopo() {
+                if (window.pageYOffset >= topoNav) {
+                    nav.classList.add("FixoNoTopo");
+                } else {
+                    nav.classList.remove("FixoNoTopo");
+                }
+
+            }
+
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+        
+
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <!-- Reservas -->
+        
+        <h1 style="text-align: center;">Fazer uma Reserva</h1>
+
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+
+        <div class="box">
+            <select id="month" name="month">
+                <option>Mês</option>
+                <option value="january">Janeiro</option>
+                <option value="february">Fevereiro</option>
+                <option value="march">Março</option>
+                <option value="april">Abril</option>
+                <option value="may">Maio</option>
+                <option value="june">Junho</option>
+                <option value="july">Julho</option>
+                <option value="august">Agosto</option>
+                <option value="september">Setembro</option>
+                <option value="october">Outubro</option>
+                <option value="november">Novembro</option>
+                <option value="december">Dezembro</option>
+            </select>
+
+
+            <select id="day" name="day">
+                <option>Dia</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select id="Quantas pessoas" name="Quantidade de Pessoas">
+                <option>Quantas Pessoas?</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+            </select>
+
+            <button class="button">Enviar</button>
+        </div>
+
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+        <p></p><br>
+
+
+        <!-- Formulário -->
+        
+        <div class="mane">
+            <form>
+                <div class="name">
+                    <label>Junte-se a nós</label>
+
+
+                    <input class="firstname" type="text" name="first-name" placeholder=" Nome">
+                </div>
+
+
+
+                <label>R.bento Gonçalves,2921 - São Pelegrino, Caxias do Sul - RS</label>
+
+                <input class="endereço" type="text" name="adress" placeholder="Endereço"><br>
+
+                <label>DamadeFerro2921@hotmail.com</label>
+                <input class="email" type="text" name="email" placeholder="Email">
+                <input class="telefone" type="text" name="phone" placeholder="Telefone"><br>
+
+                <label>(11)964220737</label>
+                <input class="assunto" type="text" name="subject" placeholder="Assunto">
+            </form>
+
+            <input class="mensagem" type="text" name="message" placeholder="Digite sua Mensagem aqui...">
+
+            <h3></h3>
+            <button type="submit" class="button1">Enviar</button>
+
+        </div>
+        <footer>
+            Elaborado pelo Time E
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>
